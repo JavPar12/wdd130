@@ -1,166 +1,219 @@
 /* Set max width for #content to 1600px and center it */
 #content {
-    max-width: 1600px;
-    margin: 0 auto; /* Center the content horizontally */
-  }
-  
-  /* Center text in navigation links */
-  nav a {
-    text-align: center;
-  }
-  
-  /* Center text in h1 and h4 elements within #hero-msg */
-  #hero-msg h1,
-  #hero-msg h4 {
-    text-align: center;
-  }
-  
-  /* Center text within .button-box */
-  .button-box {
-    text-align: center;
-  }
-  
-  /* Center text within section elements within main */
-  main section {
-    text-align: center;
-  }
-  
-  /* Center the .mountains image by setting left and right margins to auto */
-  .mountains {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  
-  /* Set the height for #background to 725px */
-  #background {
-    height: 725px;
-  }
-  
-  /* Step 11 - Background colors and text colors */
-  body {
-    background-color: #ffffff;
-  }
-  
-  header {
-    background-color: #3EA3D2;
-  }
-  
-  nav a:hover {
-    background-color: #3097C6;
-  }
-  
-  .book,
-  .join {
-    background-color: #71BF44;
-  }
-  
-  .book:hover,
-  .join:hover {
-    background-color: #609B38;
-  }
-  
-  #background {
-    background-color: #f9a71b;
-  }
-  
-  .msg {
-    background-color: #3EA3D2;
-  }
-  
-  footer {
-    background-color: #555555;
-  }
-  
-  nav a {
-    color: #ffffff;
-  }
-  
-  nav a:hover {
-    background-color: #1a1a1a;
-    color: #ffffff;
-  }
-  
-  .home-title {
-    color: #3EA3D2;
-  }
-  
-  h4 {
-    color: #555555;
-  }
-  
-  .book,
-  .join {
-    color: #ffffff;
-  }
-  
-  .book:hover,
-  .join:hover {
-    color: #ffffff;
-  }
-  
-  .msg h2 {
-    color: #ffffff;
-  }
-  
-  .msg p {
-    color: #555555;
-  }
-  
-  footer {
-    background-color: #555555;
-    color: #ffffff;
-  }
-  
-  footer a {
-    color: #CE5A5A;
-  }
-  
-  footer a:hover {
-    color: #D9C2A3;
-  }
-  
-  /* Set width and height for .logo */
-  .logo {
-    width: 80px;
-    height: 80px;
-  }
-  
-  /* Set width for .icon */
-  .icon {
-    width: 80px;
-  }
-  
-  /* Set width for #hero-img to 100% */
-  #hero-img {
-    width: 100%;
-  }
-  
-  /* Remove text underline and center text in navigation links */
-  nav a {
-    text-align: center;
-    color: #ffffff;
-    text-decoration: none;
-  }
-  
-  /* Remove text underline from .book and .join links */
-  .book,
-  .join {
-    text-decoration: none;
-  }
-  
-  /* Remove text underline from footer links */
-  footer a {
-    text-decoration: none;
-  }
-  
-  /* Increase font size for footer paragraphs */
-  footer p {
-    font-size: 1.2em;
-  }
-  
-  /* Add text underline on hover for footer links */
-  footer p a:hover {
-    text-decoration: underline;
-  }
-  
+  max-width: 1600px;
+  margin: 0 auto; /* Center the content horizontally */
+}
+
+#logo_link{
+  padding-top: 5px; /* Add padding to the top of the logo_link element */
+}
+
+/* Center text in navigation links */
+nav a {
+  text-align: center;
+  font-family: 'Bungee', 'Lora', 'Poppins', 'Raleway', sans-serif;
+  padding: 35px; /* Add padding around the navigation links */
+}
+
+/* Center text in h1 and h4 elements within #hero-msg */
+#hero-msg h1,
+#hero-msg h4 {
+  text-align: center;
+  font-family: 'Pacifico', 'Black Ops One', 'Bungee', 'Lora', 'Poppins', 'Raleway', sans-serif;
+}
+
+.card-img{
+  border: 10px solid #0bbaca; /* Add a border around the card-img class */
+}
+
+/* Center text within .button-box */
+.button-box {
+  text-align: center;
+}
+
+/* Center text within section elements within main */
+main section {
+  text-align: center;
+}
+
+main section img{
+  box-sizing: border-box; /* Include borders and padding in the image's total width and height */
+}
+
+/* Center the .mountains image by setting left and right margins to auto */
+.mountains {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 200px; /* Add top margin to the mountains class */
+  margin-bottom: 200px; /* Add bottom margin to the mountains class */
+}
+
+/* Set the height for #background to 725px */
+#background {
+  height: 725px;
+}
+
+/* Step 11 - Background colors and text colors */
+body {
+  background-color: #ffffff; /* Set the background color of the body */
+  font-family: 'Black Ops One', 'Bungee', 'Lora', 'Poppins', 'Raleway', sans-serif;
+  font-size: 22px;
+  margin: 0;
+  padding: 0;
+}
+
+h2{
+  margin: 0; /* Remove margin from h2 elements */
+}
+
+header {
+  background-color: #3EA3D2; /* Set the background color of the header */
+}
+
+nav a:hover {
+  background-color: #3097C6; /* Change the background color of navigation links on hover */
+}
+
+.book,
+.join {
+  background-color: #71BF44; /* Set the background color of book and join classes */
+  color: black;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 15px 30px;
+  margin-top: 50px; /* Add top margin to book and join classes */
+  border-radius: 5px;
+}
+
+.book:hover,
+.join:hover {
+  background-color: #609B38; /* Change the background color of book and join classes on hover */
+}
+
+#background {
+  background-color: #f9a71b; /* Set the background color of the background ID */
+}
+
+.msg {
+  background-color: #3EA3D2; /* Set the background color of the msg class */
+  line-height: 1.5em;
+  font-size: 14px;
+}
+
+footer {
+  background-color: #555555; /* Set the background color of the footer */
+}
+
+nav a {
+  text-decoration: none;
+  color: #ffffff; /* Set the text color of navigation links */
+  text-align: center;
+  padding: 25px;
+}
+
+nav a:hover {
+  background-color: #144ecd; /* Change the background color of navigation links on hover */
+  color: #ffffff;
+}
+
+.home-title {
+  color: #3EA3D2; /* Set the text color of the home-title class */
+  font-family: 'Pacifico', 'Black Ops One', 'Bungee', 'Lora', 'Poppins', 'Raleway'; /* Specify font families for the home-title class */
+  font-size: 2em;
+  margin-top: 10px; /* Add top margin to the home-title class */
+}
+
+h4 {
+  color: #555555; /* Set the text color of h4 elements */
+}
+
+.book,
+.join {
+  color: #ffffff; /* Set the text color of book and join classes */
+}
+
+.book:hover,
+.join:hover {
+  color: #ffffff;
+}
+
+.msg h2 {
+  margin-bottom: 10px; /* Add bottom margin to h2 elements within the msg class */
+  font-size: 20px;
+  color: #ffffff; /* Set the text color of h2 elements within the msg class */
+  font-family: 'Lora', 'Poppins', 'Raleway', sans-serif;
+}
+
+.msg .join{
+  display: block;
+  margin-top: 10px; /* Add top margin to the join class within the msg class */
+}
+
+.msg p {
+  color: #555555; /* Set the text color of p elements within the msg class */
+  font-size: 0.8em;
+  padding-bottom: 15px;
+}
+
+footer {
+  background-color: #555555; /* Set the background color of the footer */
+  color: #ffffff; /* Set the text color of the footer */
+  padding: 25px 50px;
+  margin-top: 25px;
+}
+
+footer a {
+  color: #CE5A5A; /* Set the text color of footer links */
+}
+
+footer a:hover {
+  color: #D9C2A3; /* Change the text color of footer links on hover */
+}
+
+/* Set width and height for .logo */
+.logo {
+  width: 80px; /* Set the width of the logo class */
+  height: 80px; /* Set the height of the logo class */
+}
+
+/* Set width for .icon */
+.icon {
+  width: 80px; /* Set the width of the icon class */
+  padding-top: 10px; /* Add top padding to the icon class */
+}
+
+.rivers-card, .camping-card, .rapids-card {
+  margin: 200px 0; /* Add top and bottom margin to rivers-card, camping-card, and rapids-card classes */
+}
+
+/* Set width for #hero-img to 100% */
+#hero-img {
+  width: 100%;
+}
+
+/* Remove text underline and center text in navigation links */
+nav a {
+  text-align: center;
+  color: #ffffff; /* Set the text color of navigation links */
+  text-decoration: none;
+}
+
+/* Remove text underline from footer links */
+footer a {
+  text-decoration: none;
+}
+
+/* Increase font size for footer paragraphs */
+footer p {
+  font-size: 1.2em; /* Increase the font size of p elements within the footer */
+}
+
+/* Add text underline on hover for footer links */
+footer p a:hover {
+  text-decoration: underline; /* Add underline to footer links on hover */
+}
+
+footer .social img{
+  padding-top: 15px; /* Add top padding to social media icons within the footer */
+}
