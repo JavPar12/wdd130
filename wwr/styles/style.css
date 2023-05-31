@@ -315,7 +315,6 @@ footer .social img{
   padding-top: 15px; /* Add top padding to social media icons within the footer */
 }
 
-
 @media screen and (max-width: 900px) {
   #hero, .home-grid {
       display: block;
