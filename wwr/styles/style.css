@@ -6,6 +6,8 @@
 
 #logo_link{
   padding-top: 5px; /* Add padding to the top of the logo_link element */
+  justify-self: center;
+  align-self: center;
 }
 
 /* Center text in navigation links */
@@ -15,16 +17,96 @@ nav a {
   padding: 35px; /* Add padding around the navigation links */
 }
 
+#hero{
+display: grid;
+grid-template-columns: 1fr 3fr 1fr;
+margin-top: -100px;
+}
+
+#hero-box{
+  grid-column: 1/4;
+  grid-row: 1/3;
+  z-index: -1;
+}
+
+#hero-msg{
+  grid-column: 2/3;
+  grid-row: 1/2;
+  margin-top: 50%;
+  transform: translateY(-50%);
+}
+
 /* Center text in h1 and h4 elements within #hero-msg */
 #hero-msg h1,
 #hero-msg h4 {
+  color: #f9a71b;
   text-align: center;
   font-family: 'Pacifico', 'Black Ops One', 'Bungee', 'Lora', 'Poppins', 'Raleway', sans-serif;
+  text-shadow: -1px -1px 0 #000000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  font-size: 40px;
+  
 }
 
-.card-img{
-  border: 10px solid #0bbaca; /* Add a border around the card-img class */
+.home-grid {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 20px;
 }
+
+.card-img,
+.mountains {
+  width: 100%;
+  box-shadow: 5px 5px 10px #6f7364;
+}
+
+.rivers-card {
+  grid-column: 2 / 5;
+  grid-row: 2 / 3;
+}
+
+.camping-card {
+  grid-column: 5 / 8;
+  grid-row: 2 / 3;
+}
+
+.rapids-card {
+  grid-column: 8 / 11;
+  grid-row: 2 / 3;
+}
+
+#background {
+  grid-column: 1 / 12;
+  grid-row: 4 / 10;
+  display: flex;
+  align-items: center;
+}
+
+.mountains {
+  grid-column: 2 / 8;
+  grid-row: 5 / 9;
+  margin-top: 0; /* Remove the top margin */
+  margin-bottom: 0; /* Remove the bottom margin */
+  border-radius: 24px;
+}
+
+.msg {
+  grid-column: 6 / 11;
+  grid-row: 6 / 7;
+}
+
+.card-img {
+  border: 10px solid #3EA3D2;
+  border-radius: 250px;
+  transition: transform .5s;
+  box-shadow: 5px 5px 10px #5e5e5e;
+}
+
+.card-img:hover {
+  opacity: .6;
+  transform: scale(1.1);
+}
+
+
 
 /* Center text within .button-box */
 .button-box {
@@ -36,23 +118,16 @@ main section {
   text-align: center;
 }
 
-main section img{
-  box-sizing: border-box; /* Include borders and padding in the image's total width and height */
-}
-
-/* Center the .mountains image by setting left and right margins to auto */
-.mountains {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 200px; /* Add top margin to the mountains class */
-  margin-bottom: 200px; /* Add bottom margin to the mountains class */
+main section img {
+  box-sizing: border-box;
 }
 
 /* Set the height for #background to 725px */
 #background {
   height: 725px;
+  background-image: linear-gradient(to bottom, #f9a71b,#746243);
 }
+
 
 /* Step 11 - Background colors and text colors */
 body {
@@ -68,37 +143,41 @@ h2{
 }
 
 header {
-  background-color: #3EA3D2; /* Set the background color of the header */
+  background-image: linear-gradient(to bottom, #3EA3D2,#144ecd); /* Set the background color of the header */
+  display: grid;
+  grid-template-columns: 150px auto;
 }
 
 nav a:hover {
   background-color: #3097C6; /* Change the background color of navigation links on hover */
 }
 
+
 .book,
 .join {
-  background-color: #71BF44; /* Set the background color of book and join classes */
+  background-image: linear-gradient(to bottom, #71BF44, #3d5f2a);
   color: black;
   text-decoration: none;
   font-size: 18px;
   padding: 15px 30px;
-  margin-top: 50px; /* Add top margin to book and join classes */
+  margin-top: 50px;
   border-radius: 5px;
+  transition: transform 0.3s;
 }
 
 .book:hover,
 .join:hover {
-  background-color: #609B38; /* Change the background color of book and join classes on hover */
+  background-color: #609B38;
+  transform: scale(1.05);
 }
 
-#background {
-  background-color: #f9a71b; /* Set the background color of the background ID */
-}
 
 .msg {
-  background-color: #3EA3D2; /* Set the background color of the msg class */
+  background-image: linear-gradient(to bottom, #3EA3D2, #144ecd);
   line-height: 1.5em;
-  font-size: 14px;
+  font-size: 15px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px #6f7364;
 }
 
 footer {
@@ -110,11 +189,15 @@ nav a {
   color: #ffffff; /* Set the text color of navigation links */
   text-align: center;
   padding: 25px;
+  transition: transform 0.3s;
+  border-radius: 5px;
 }
 
 nav a:hover {
   background-color: #144ecd; /* Change the background color of navigation links on hover */
   color: #ffffff;
+  transform: scale(1.05);
+  border-radius: 25%;
 }
 
 .home-title {
@@ -141,7 +224,7 @@ h4 {
 .msg h2 {
   margin-bottom: 10px; /* Add bottom margin to h2 elements within the msg class */
   font-size: 20px;
-  color: #ffffff; /* Set the text color of h2 elements within the msg class */
+  color: #fdfdff; /* Set the text color of h2 elements within the msg class */
   font-family: 'Lora', 'Poppins', 'Raleway', sans-serif;
 }
 
@@ -151,20 +234,25 @@ h4 {
 }
 
 .msg p {
-  color: #555555; /* Set the text color of p elements within the msg class */
-  font-size: 0.8em;
-  padding-bottom: 15px;
+  color: #ffffff; /* Set the text color of p elements within the msg class */
+  font-size: 1.5em;
+  padding-bottom: 10px;
+  font-family: 'Lora', 'Poppins', 'Raleway', sans-serif;
 }
 
 footer {
-  background-color: #555555; /* Set the background color of the footer */
+  background-image: linear-gradient( #555555, #b1afaf); /* Set the background color of the footer */
   color: #ffffff; /* Set the text color of the footer */
   padding: 25px 50px;
-  margin-top: 25px;
+  margin-top: 200px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
 }
 
 footer a {
-  color: #CE5A5A; /* Set the text color of footer links */
+  color: #ffffff; /* Set the text color of footer links */
 }
 
 footer a:hover {
@@ -175,6 +263,15 @@ footer a:hover {
 .logo {
   width: 80px; /* Set the width of the logo class */
   height: 80px; /* Set the height of the logo class */
+  border-radius: 50%;
+  box-shadow: 
+    0 2px 4px rgba(0, 0, 0, 0.5), 
+    0 4px 8px rgba(0, 0, 0, 0.5); 
+}
+
+nav{
+  display: flex;
+  justify-content: space-around;
 }
 
 /* Set width for .icon */
@@ -211,9 +308,52 @@ footer p {
 
 /* Add text underline on hover for footer links */
 footer p a:hover {
-  text-decoration: underline; /* Add underline to footer links on hover */
+  text-decoration: none; /* Add underline to footer links on hover */
 }
 
 footer .social img{
   padding-top: 15px; /* Add top padding to social media icons within the footer */
+}
+
+
+@media screen and (max-width: 900px) {
+  #hero, .home-grid {
+      display: block;
+      height: auto;
+  }
+  nav, footer {
+      flex-direction: column;
+  }
+  nav a {
+      display: block;
+      padding: 15px;
+  }
+  #hero {
+      margin-top: 0;
+  }
+  #hero-msg {
+      margin-top: 0;
+  }
+  #hero-msg h4 {
+      display: none;
+  }
+  .home-title {
+      font-size: 25px;
+      color: #6f7364;
+  }
+  .rivers-card, .camping-card, .rapids-card { 
+      margin: 50px auto;
+      width: 60%;
+  }
+  #background {
+      display: none;
+  }
+  .mountains, .msg {
+      width: 80%;
+      display: block;
+      margin: 0 auto;
+  }
+  footer {
+      margin-top: 25px;
+  }
 }
