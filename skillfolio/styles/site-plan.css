@@ -1,8 +1,8 @@
 /* if you are using any Google fonts change the font names below to your fonts. 
 Any spaces in your font name should be replaced with a +. 
 Fonts are separated by a | */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
 :root {
   /* Main Colors */
@@ -14,8 +14,8 @@ Fonts are separated by a | */
   --accent2-color: #E9ECEF;  /* Light Gray */
   
   /* Fonts */
-  --heading-font: 'Montserrat', sans-serif;
-  --paragraph-font: 'Open Sans', sans-serif;
+  --heading-font: 'Roboto Slab', serif;
+  --paragraph-font: 'Poppins', sans-serif;
 
   /* Text and Background Colors */
   --headline-color-on-white: #555555;  /* Headlines on white background */
@@ -30,6 +30,8 @@ Fonts are separated by a | */
   --nav-hover-link-color: #FFFFFF;  /* Link color on hover */
   --nav-hover-background-color: #333333;  /* Background color on hover */
 }
+
+
 
 
 
