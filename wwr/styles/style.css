@@ -139,7 +139,14 @@ body {
 }
 
 h2{
+  color: inherit;
+  text-decoration: none;
   margin: 0; /* Remove margin from h2 elements */
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
 }
 
 header {
