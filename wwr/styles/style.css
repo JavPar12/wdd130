@@ -322,6 +322,81 @@ footer .social img{
   padding-top: 15px; /* Add top padding to social media icons within the footer */
 }
 
+
+    /* CSS styles for the title section */
+body {
+background-image: linear-gradient(to bottom, #ffffff, #007cf0);
+}
+    
+    
+    
+
+#intro {
+background:linear-gradient(90deg, #007cf0, #000) ;
+padding: 40px;
+text-align: center;
+font-size: 2rem;
+
+-webkit-text-fill-color: transparent;
+-webkit-background-clip: text;
+}
+
+.rivers-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+  padding: 0 30px; /* Agrega un espacio de 30px a los lados */
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 0 -15px; /* Agrega un espacio negativo para compensar el espacio agregado en el contenedor principal */
+}
+
+.card {
+  --clr: #009688;
+  background-color: var(--clr);
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 15px; /* Agrega un espacio de 15px a los lados de cada tarjeta */
+  border-radius: 20px; /* Redondea las esquinas de las tarjetas */
+}
+
+.card .img-box {
+  text-align: center;
+}
+
+.card .img-box img {
+  max-width: 100%;
+}
+
+.card h2 {
+  margin-top: 0;
+}
+
+.card p {
+  margin-bottom: 10px;
+}
+
+.card a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+
+
+
+
+
+
+
 @media screen and (max-width: 900px) {
   #hero, .home-grid {
       display: block;
