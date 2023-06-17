@@ -375,7 +375,7 @@ footer .social img{
       object-fit: cover;
       border-radius: 20px;
       transition: transform 0.4s ease-in-out;
-      opacity: 1s;
+      opacity: 1;
     }
     
     .card .img-box img:hover {
