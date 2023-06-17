@@ -320,6 +320,7 @@ footer p a:hover {
 
 footer .social img{
   padding-top: 15px; /* Add top padding to social media icons within the footer */
+  border-radius: 100px;
 }
 
 
@@ -489,6 +490,7 @@ footer .social img{
       max-width: 100%;
       margin: 0 auto;
     }
+    
     
     
 @media screen and (max-width: 900px) {
