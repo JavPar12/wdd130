@@ -112,3 +112,47 @@ html{
 .home .banner-content .networks a:hover{
     background-color: #3498DB;
 }
+
+/* About Me */
+
+.aboutme{
+    background-color: #2E3A49;
+    color: #ffffff;
+    padding: 50px 20px;
+}
+
+.aboutme .section-content{
+    max-width: 1100px;
+    margin: auto;
+}
+
+.aboutme h2{
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+}
+
+.aboutme .section-content p{
+    font: 18px;
+    line-height: 22px;
+    margin-bottom: 20px;
+}
+
+.aboutme .section-content p span{
+    color: #3498DB;
+    font-weight: bold;
+}
+
+.aboutme .row{
+    display: flex;
+}
+
+.aboutme .row .column{
+    width: 50%;
+}
+
+.aboutme .row .column h3{
+    font-size: 28px;
+    font-family: 'Righteous';
+}
