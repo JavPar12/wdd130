@@ -8,17 +8,18 @@
     <title>Portfolio</title>
 </head>
 <body>
+
     <!-- NAV SECTION-->
     <div class="container-header">
         <header>
-            <div class="logo>">
+            <div class="logo">
                 <a href="index.html">
-                    <img src="images/Logo2.png" alt="My Logo" width="140" height="90">
+                    <a href="#home"><img src="images/Logo2.png" alt="My Logo" width="140" height="90"></a>
                 </a>
             </div>
             <nav id="nav">
                 <ul>
-                    <li><a href="#inicio">INICIO</a></li>
+                    <li><a href="#home">HOME</a></li>
                     <li><a href="#aboutme">ABOUT ME</a></li>
                     <li><a href="#skills">SKILLS</a></li>
                     <li><a href="#resume">RESUME</a></li>
@@ -28,7 +29,11 @@
             </nav>
             <div class="nav-responsive" onclick="mostrarOcultarMenu()">
                 <i class="fa-solid fa-bars"></i>
+            </div>    
         </header>
+        <div class="progress-container">
+            <div class="progress-bar" id="myBar"></div>
+        </div>
 
     </div>
 
@@ -42,13 +47,14 @@
             <h2>-Software Engineer-</h2>
 
             <div class="networks">
-            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
 
-            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
 
-            <a href="#"><i class="fa-brands fa-github"></i></a>
+                <a href="#"><i class="fa-brands fa-github"></i></a>
 
-            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
         </div>
 
     </section>
@@ -240,10 +246,10 @@
     <section class="resume" id="resume">
         <div class="section-content">
             <h2>RESUME</h2>
-            <div class="row">`
-                <div class="left-col">
+            <div class="row">
+                <div class="left column">
                     <h3>Education</h3>
-                    <div class="left-item">
+                    <div class="left item">
                         <h4>Software Engineering</h4>
                         <span class="house">BYU-I</span>
                         <span class="date">2022 - 2026</span>
@@ -252,7 +258,7 @@
                             <div class="circlei"></div>
                         </div>
                     </div>
-                    <div class="left-item">
+                    <div class="left item">
                         <h4>Computer Science</h4>
                         <span class="house">UNAM</span>
                         <span class="date">2022 - 2026</span>
@@ -261,7 +267,7 @@
                             <div class="circlei"></div>
                         </div>
                     </div>
-                    <div class="left-item">
+                    <div class="left item">
                         <h4>Back-End Specialitazion</h4>
                         <span class="house">Alura - ONE</span>
                         <span class="date">2022 - 2023</span>
@@ -274,9 +280,9 @@
 
                 <!--Right Side-->
 
-                <div class="right-col">
+                <div class="right column">
                     <h3>Certifications</h3>
-                    <div class="right-item">
+                    <div class="right item">
                         <h4>Basic Computer and Informatics</h4>
                         <span class="house">Platzi</span>
                         <span class="date">2023</span>
@@ -285,7 +291,7 @@
                             <div class="circled"></div>
                         </div>
                     </div>
-                    <div class="right-item">
+                    <div class="right item">
                         <h4>Advanced HTML5 & CSS3</h4>
                         <span class="house">Oracle-Alura ONE</span>
                         <span class="date">2023</span>
@@ -294,7 +300,7 @@
                             <div class="circled"></div>
                         </div>
                     </div>
-                    <div class="right-item">
+                    <div class="right item">
                         <h4>Programming Beginner</h4>
                         <span class="house">Oracle-Alura ONE</span>
                         <span class="date">2023</span>
@@ -303,7 +309,7 @@
                             <div class="circled"></div>
                         </div> 
                     </div>
-                    <div class="right-item">
+                    <div class="right item">
                         <h4>Business Agility</h4>
                         <span class="house">Oracle-Alura ONE</span>
                         <span class="date">2023</span>
@@ -312,7 +318,7 @@
                             <div class="circled"></div>
                         </div> 
                     </div>
-                    <div class="right-item">
+                    <div class="right item">
                         <h4>Advanced Mid - English</h4>
                         <span class="house">ACTFL</span>
                         <span class="date">2022</span>
@@ -326,5 +332,60 @@
         </div>    
     </section>
 
+    <!--PORTFOLIO SECTION-->
+    <section class="portfolio" id="portfolio">
+        <div class="content-section">
+            <h2>PORTFOLIO</h2>
+            <div class="galery">
+                <div class="Proyect">
+                    <img src="images/Portfolio/p1.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Creative Design</h3>
+                        <p>Photography</p>
+                    </div>
+                </div>
+                <div class="Proyect">
+                    <img src="images/Portfolio/p2.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Creative Design</h3>
+                        <p>Photography</p>
+                    </div>
+                </div>
+                <div class="Proyect">
+                    <img src="images/Portfolio/p3.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Creative Design</h3>
+                        <p>Photography</p>
+                    </div>
+                </div>
+                <div class="Proyect">
+                    <img src="images/Portfolio/p4.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Creative Design</h3>
+                        <p>Photography</p>
+                    </div>
+                </div>
+                <div class="Proyect">
+                    <img src="images/Portfolio/p5.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Creative Design</h3>
+                        <p>Photography</p>
+                    </div>
+                </div>
+                <div class="Proyect">
+                    <img src="images/Portfolio/p6.jpg" alt="" width="50%">
+                    <div class="overlay">
+                        <h3>Creative Design</h3>
+                        <p>Photography</p>
+                    </div>
+                </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+    
 </body>
 </html>
