@@ -1,12 +1,13 @@
  // SCROLL BAR
-window.onscroll = function() {myFunction()};
-        
+window.addEventListener('scroll', myFunction);
+
 function myFunction() {
     var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
     var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-    var scrolled = (winScroll / height) * 100;
+   var scrolled = (winScroll / height) * 100;
     document.getElementById("myBar").style.width = scrolled + "%";
 }
+
 
 let visibleMenu = false;
 /* function that show and hide menu*/
