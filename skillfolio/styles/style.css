@@ -251,6 +251,7 @@ html{
     z-index: 10;
 }
 
+
 .aboutme button .overlay{
     position: absolute;
     top: 0;
@@ -265,6 +266,17 @@ html{
 .aboutme button:hover .overlay{
     width: 100%;
 }
+
+.aboutme button a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.aboutme button a:hover {
+    text-decoration: none;
+    color: #ffffff;
+}
+
 
 /*S K I L L S  S E C T I O N*/
 
@@ -354,7 +366,7 @@ html{
 
 @keyframes htmlcss {
     0%{width: 0%;}
-    100%{width: 89%;}
+    100%{width: 85%;}
 }
 
 .skills .skill .python{
@@ -364,7 +376,7 @@ html{
 
 @keyframes python {
     0%{width: 0%;}
-    100%{width: 75%;}
+    100%{width: 50%;}
 }
 
 .skills .skill .java{
@@ -374,7 +386,7 @@ html{
 
 @keyframes java {
     0%{width: 0%;}
-    100%{width: 89%;}
+    100%{width: 25%;}
 
 }
 
@@ -385,7 +397,7 @@ html{
 
 @keyframes c {
     0%{width: 0%;}
-    100%{width: 89%;}
+    100%{width: 25%;}
     
 }
 
@@ -397,7 +409,7 @@ html{
 
 @keyframes english {
     0%{width: 0%;}
-    100%{width: 75%;}
+    100%{width: 90%;}
 }
 
 .skills .skill .teamwork{
@@ -407,7 +419,7 @@ html{
 
 @keyframes teamwork {
     0%{width: 0%;}
-    100%{width: 89%;}
+    100%{width: 90%;}
 }
 
 .skills .skill .leadership{
@@ -417,7 +429,7 @@ html{
 
 @keyframes leadership {
     0%{width: 0%;}
-    100%{width: 75%;}
+    100%{width: 90%;}
 }
 
 .skills .skill .dedication{
@@ -427,7 +439,7 @@ html{
 
 @keyframes dedication {
     0%{width: 0%;}
-    100%{width: 89%;}
+    100%{width: 100%;}
 
 }
 
@@ -438,7 +450,7 @@ html{
 
 @keyframes proyectm {
     0%{width: 0%;}
-    100%{width: 89%;}
+    100%{width: 80%;}
     
 }
 
@@ -566,6 +578,41 @@ html{
     position: relative;
     bottom: 4px;
 }
+.resume .row .item:hover {
+    background-color: #3498DB;
+}
+
+.resume .row .item:hover h4,
+.resume .row .item:hover .house,
+.resume .row .item:hover .date,
+.resume .row .item:hover p {
+    color: #ffffff;
+}
+
+.resume .row .item:hover .conectori,
+.resume .row .item:hover .conectord {
+    background-color: #ffffff;
+}
+
+.resume .row .item:hover .conectori .circlei,
+.resume .row .item:hover .conectord .circled {
+    background-color: #ffffff;
+}
+
+.resume .row .item {
+    transition: background-color 0.8s ease, color 0.5s ease;
+}
+
+.resume .row .item .conectori,
+.resume .row .item .conectord {
+    transition: background-color 0.8s ease;
+}
+
+.resume .row .item .conectori .circlei,
+.resume .row .item .conectord .circled {
+    transition: background-color 0.8s ease;
+}
+
 
 /*PORTFOLIO SECTION*/
 
@@ -614,6 +661,7 @@ html{
     height: 100%;
     text-align: center;
     background: linear-gradient(rgba(52, 152, 219,.8),rgba(52, 152, 219,.8));
+    color: #ffffff;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -634,6 +682,7 @@ html{
 
 .portfolio .galery .proyect .overlay h3{
     margin-bottom: 0px;
+    color: #ffffff;
 }
 
 /* SECCION CONTACTO */
@@ -747,3 +796,122 @@ html{
 }
 
 /*FOOTER*/
+footer{
+    background-color: #252A2E;
+    color: #ffffff;
+    padding: 50px 0 30px 0;
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+
+footer .networks{
+    margin-bottom: 20px;
+}
+
+
+footer .networks a{
+    color: #ffffff;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #ffffff;
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 40px 5px;
+    font-size: 20px;
+    transition: .3s;
+    transition: transform 0.2s;
+}
+
+footer .networks a:hover{
+    background-color: #3498DB;
+    transform: scale(1.2);
+}
+
+footer .up{
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: #3498DB;
+    color: #ffffff;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -25px;
+    border-radius: 50%;
+    line-height: 50px;
+    font-size: 18px;
+}
+
+/*RESPONSIVE SECTION*/
+@media screen and (max-width:980px){
+    nav{
+        display: none;
+    }
+    .nav-responsive{
+        display: block;
+    }
+    nav.responsive{
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 75px;
+        background-color: #252A2E;
+        width: 180px;
+    }
+    nav.responsive ul{
+        display: block !important;
+    }
+    nav.responsive ul li{
+        border-bottom: 1px solid #fff;
+        padding: 10px 0;
+    }
+}
+
+@media screen and (max-width:700px){
+    .aboutme .row{
+        display: block;
+    }
+    .aboutme .row .column{
+        width: fit-content;
+    }
+
+    .skills .row{
+        display: block;
+    }
+    .skills .row .column{
+        width: 100%;
+    }
+    .skills .row .column .skill-bar{
+        width: 100%;
+    }
+
+    .resume .row{
+        display: block;
+    }
+    .resume .row .column{
+        width: 90%;
+    }
+    .resume .row .right{
+        margin-left: 20px;
+    }
+
+    .portfolio .galery{
+        display: block;
+        width: 100%;
+    }
+    .portfolio .galery .proyect{
+        max-width: 100%;
+    }
+    .portfolio .galery .proyect img{
+        width: 100%;
+    }
+    .contact .row{
+        display: block;
+    }
+    .contact .row .col{
+        width: 100%;
+    }
+}

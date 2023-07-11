@@ -19,15 +19,15 @@
             </div>
             <nav id="nav">
                 <ul>
-                    <li><a href="#home">HOME</a></li>
-                    <li><a href="#aboutme">ABOUT ME</a></li>
-                    <li><a href="#skills">SKILLS</a></li>
-                    <li><a href="#resume">RESUME</a></li>
-                    <li><a href="#portfolio">PORTFOLIO</a></li>
-                    <li><a href="#contact">CONTACT</a></li>
+                    <li><a href="#home" onclick="select()">HOME</a></li>
+                    <li><a href="#aboutme" onclick="select()">ABOUT ME</a></li>
+                    <li><a href="#skills" onclick="select()">SKILLS</a></li>
+                    <li><a href="#resume" onclick="select()">RESUME</a></li>
+                    <li><a href="#portfolio" onclick="select()">PORTFOLIO</a></li>
+                    <li><a href="#contact" onclick="select()">CONTACT</a></li>
                 </ul>
             </nav>
-            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+            <div class="nav-responsive" onclick="showhideMenu()">
                 <i class="fa-solid fa-bars"></i>
             </div>    
         </header>
@@ -45,19 +45,19 @@
             </div>
             <h1>LUIS PARDO</h1>
             <h2>-Software Engineer-</h2>
-
+    
             <div class="networks">
-                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-
-                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-
-                <a href="#"><i class="fa-brands fa-github"></i></a>
-
-                <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://www.facebook.com/JavierPrd12" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+    
+                <a href="https://www.linkedin.com/in/luis-javier-pardo/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+    
+                <a href="https://github.com/JavPar12" target="_blank"><i class="fa-brands fa-github"></i></a>
+    
+                <a href="https://wa.me/525560775812" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
             </div>
         </div>
-
     </section>
+    
 
     <!-- ABOUT ME SECTION-->
     <section id="aboutme" class="aboutme">
@@ -140,9 +140,12 @@
                 </div>
             </div>
             <button>
-                Download Resume <i class="fa-solid fa-download"></i>
+                <a href="Luis Pardo.pdf" download="Luis Pardo.pdf">
+                    Download Resume<i class="fa-solid fa-download"></i>
+                </a>
                 <span class="overlay"></span>
             </button>
+            
         </div>
     </section>
 
@@ -167,14 +170,14 @@
                     <span>HTML & CSS</span>
                     <div class="skill-bar">
                         <div class="progress">
-                            <span>75%</span>
+                            <span>85%</span>
                         </div>
                 </div>
                 <div class="skill">
                     <span>Python</span>
                     <div class="skill-bar">
                         <div class="progress">
-                            <span>75%</span>
+                            <span>50%</span>
                         </div>
                     </div>
                 </div>
@@ -182,7 +185,7 @@
                     <span>Java</span>
                     <div class="skill-bar">
                         <div class="progress">
-                            <span>75%</span>
+                            <span>25%</span>
                         </div>
                     </div>
                 </div>
@@ -190,7 +193,7 @@
                     <span>C#</span>
                     <div class="skill-bar">
                         <div class="progress">
-                            <span>75%</span>
+                            <span>25%</span>
                         </div>
                     </div>
                 </div>
@@ -203,7 +206,7 @@
                     <span>English</span>
                     <div class="skill-bar">
                         <div class="progress">
-                            <span>75%</span>
+                            <span>90%</span>
                         </div>
                     </div>
                 </div>
@@ -211,14 +214,14 @@
                     <span>Teamwork</span>
                     <div class="skill-bar">
                         <div class="progress">
-                            <span>75%</span>
+                            <span>90%</span>
                         </div>
                 </div>
                 <div class="skill">
                     <span>Leadership</span>
                     <div class="skill-bar">
                         <div class="progress">
-                            <span>75%</span>
+                            <span>90%</span>
                         </div>
                     </div>
                 </div>
@@ -226,7 +229,7 @@
                     <span>Dedication</span>
                     <div class="skill-bar">
                         <div class="progress">
-                            <span>75%</span>
+                            <span>100%</span>
                         </div>
                     </div>
                 </div>
@@ -234,7 +237,7 @@
                     <span>Proyect Management</span>
                     <div class="skill-bar">
                         <div class="progress">
-                            <span>75%</span>
+                            <span>80%</span>
                         </div>
                     </div>
                 </div>
@@ -337,90 +340,114 @@
         <div class="content-section">
             <h2>PORTFOLIO</h2>
             <div class="galery">
-                <div class="proyect">
-                    <img src="images/Portfolio/p1.jpg" alt="">
-                    <div class="overlay">
-                        <h3>Barbershop Website</h3>
-                        <p>HTML5 & CSS3</p>
+                <a href="https://github.com/JavPar12/ONE/blob/master/HTML5-y-CSS3-parte1/index.html" target="_blank">
+                    <div class="proyect">
+                        <img src="images/Portfolio/p1.jpg" alt="">
+                        <div class="overlay">
+                            <h3>Barbershop Website</h3>
+                            <p>HTML5 & CSS3</p>
+                        </div>
                     </div>
-                </div>
-                <div class="proyect">
-                    <img src="images/Portfolio/p2.jpg" alt="">
-                    <div class="overlay">
-                        <h3>White Water Rafting Website</h3>
-                        <p>HTML5 & CSS3</p>
+                </a>
+                <a href="https://javpar12.github.io/wdd130/wwr/index.html" target="_blank">
+                    <div class="proyect">
+                        <img src="images/Portfolio/p2.jpg" alt="">
+                        <div class="overlay">
+                            <h3>White Water Rafting Website</h3>
+                            <p>HTML5 & CSS3</p>
+                        </div>
                     </div>
-                </div>
-                <div class="proyect">
-                    <img src="images/Portfolio/p3.jpg" alt="">
-                    <div class="overlay">
-                        <h3>Personal Website</h3>
-                        <p>HTML5,CSS3 & JavaScript</p>
+                </a>
+                <a href="https://github.com/JavPar12/wdd130/tree/master/skillfolio" target="_blank">
+                    <div class="proyect">
+                        <img src="images/Portfolio/p3.jpg" alt="">
+                        <div class="overlay">
+                            <h3>Personal Website</h3>
+                            <p>HTML5,CSS3 & JavaScript</p>
+                        </div>
                     </div>
-                </div>
-                <div class="proyect">
-                    <img src="images/Portfolio/p4.jpg" alt="">
-                    <div class="overlay">
-                        <h3>To-do list</h3>
-                        <p>Python</p>
+                </a>
+                <a href="https://github.com/JavPar12/To-do-list" target="_blank">
+                    <div class="proyect">
+                        <img src="images/Portfolio/p4.jpg" alt="">
+                        <div class="overlay">
+                            <h3>To-do list</h3>
+                            <p>Python</p>
+                        </div>
                     </div>
-                </div>
-                <div class="proyect">
-                    <img src="images/Portfolio/p5.jpg" alt="">
-                    <div class="overlay">
-                        <h3>Text Encryptor</h3>
-                        <p>HTML5,CSS & JavaScript</p>
+                </a>
+                <a href="#" target="_blank">
+                    <div class="proyect">
+                        <img src="images/Portfolio/p5.jpg" alt="">
+                        <div class="overlay">
+                            <h3>Text Encryptor</h3>
+                            <p>HTML5,CSS & JavaScript</p>
+                        </div>
                     </div>
-                </div>
-                <div class="proyect">
-                    <img src="images/Portfolio/p6.jpg" alt="">
-                    <div class="overlay">
-                        <h3>Calculator</h3>
-                        <p>Python</p>
+                </a>
+                <a href="#" target="_blank">    
+                    <div class="proyect">
+                        <img src="images/Portfolio/p6.jpg" alt="">
+                        <div class="overlay">
+                            <h3>Calculator</h3>
+                            <p>Python</p>
+                        </div>
                     </div>
-                </div>
-                <div class="proyect">
-                    <img src="images/Portfolio/p7.png" alt="">
-                    <div class="overlay">
-                        <h3>Face Recognition with Real-Time Database</h3>
-                        <p>Python</p>
+                </a>
+                <a href="#" target="_blank">
+                    <div class="proyect">
+                        <img src="images/Portfolio/p7.png" alt="">
+                        <div class="overlay">
+                            <h3>Face Recognition with Real-Time Database</h3>
+                            <p>Python</p>
+                        </div>
                     </div>
-                </div>
-                <div class="proyect">
-                    <img src="images/Portfolio/p8.png" alt="">
-                    <div class="overlay">
-                        <h3>Currency Converter</h3>
-                        <p>Java</p>
+                </a>   
+                <a href="#" target="_blank">
+                    <div class="proyect">
+                        <img src="images/Portfolio/p8.png" alt="">
+                        <div class="overlay">
+                            <h3>Currency Converter</h3>
+                            <p>Java</p>
+                        </div>
                     </div>
-                </div>
-                <div class="proyect">
-                    <img src="images/Portfolio/p9.png" alt="">
-                    <div class="overlay">
-                        <h3>Weather App</h3>
-                        <p>JavaScript</p>
+                </a>  
+                <a href="#" target="_blank">  
+                    <div class="proyect">
+                        <img src="images/Portfolio/p9.png" alt="">
+                        <div class="overlay">
+                            <h3>Weather App</h3>
+                            <p>JavaScript</p>
+                        </div>
                     </div>
-                </div>
-                <div class="proyect">
-                    <img src="images/Portfolio/p10.png" alt="">
-                    <div class="overlay">
-                        <h3>Web Scraper</h3>
-                        <p>Python</p>
+                </a>
+                <a href="#" target="_blank">    
+                    <div class="proyect">
+                        <img src="images/Portfolio/p10.png" alt="">
+                        <div class="overlay">
+                            <h3>Web Scraper</h3>
+                            <p>Python</p>
+                        </div>
                     </div>
-                </div>
-                <div class="proyect">
-                    <img src="images/Portfolio/p11.png" alt="">
-                    <div class="overlay">
-                        <h3>URL Shortener</h3>
-                        <p>Java,Javascript & SQL</p>
+                </a>
+                <a href="#" target="_blank">    
+                    <div class="proyect">
+                        <img src="images/Portfolio/p11.png" alt="">
+                        <div class="overlay">
+                            <h3>URL Shortener</h3>
+                            <p>Java,Javascript & SQL</p>
+                        </div>
                     </div>
-                </div>
-                <div class="proyect">
-                    <img src="images/Portfolio/p12.png" alt="">
-                    <div class="overlay">
-                        <h3>Personal Blog</h3>
-                        <p>HTML5,CSS3 & JavaScript</p>
+                </a>
+                <a href="#" target="_blank">    
+                    <div class="proyect">
+                        <img src="images/Portfolio/p12.png" alt="">
+                        <div class="overlay">
+                            <h3>Personal Blog</h3>
+                            <p>HTML5,CSS3 & JavaScript</p>
+                        </div>
                     </div>
-                </div>
+                </a>    
                     </div>
                 </div>
             </div>
@@ -428,45 +455,62 @@
     </section>
 
     <!-- CONTACT SECTION -->
-    <section id="contact" class="contact">
-        <div class="section-content">
-            <h2>Contact</h2>
-            <div class="row">
-                <!-- Form -->
-                <div class="col">
-                    <input type="text" placeholder="Name">
-                    <input type="text" placeholder="Phone Number">
-                    <input type="text" placeholder="Email Address">
-                    <input type="text" placeholder="Subject">
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
-                    <button>
+<section id="contact" class="contact">
+    <div class="section-content">
+        <h2>Contact</h2>
+        <div class="row">
+            <!-- Form -->
+            <div class="col">
+                <form action="procesar_formulario.php" method="POST">
+                    <input type="text" name="name" placeholder="Name" required>
+                    <input type="text" name="phone" placeholder="Phone Number" required>
+                    <input type="email" name="email" placeholder="Email Address" required>
+                    <input type="text" name="subject" placeholder="Subject" required>
+                    <textarea name="message" cols="30" rows="10" placeholder="Message" required></textarea>
+                    <button type="submit">
                         Send Message <i class="fas fa-paper-plane"></i>
                         <span class="overlay"></span>
                     </button>
-                </div>
-                <!-- Map -->
-                <div class="col">
-                    <img src="images/mex.jpg" alt="" width="350px" height="550px">
-                    <div class="info">
-                        <ul>
-                            <li>
-                                <i class="fas fa-map-marker-alt"></i>Mexico City, Postal Code: 14100
-                            </li>
-                            <li>
-                                <i class="fas fa-phone-alt"></i>Call us: +5255 6077-5812
-                            </li>
-                            <li>
-                                <i class="fas fa-envelope"></i>Email: Pardojavier12@gmail.com
-                            </li>
-                        </ul>
-                    </div>
+                </form>
+            </div>
+            <!-- Map -->
+            <div class="col">
+                <img src="images/mex.jpg" alt="" width="350px" height="550px">
+                <div class="info">
+                    <ul>
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>Mexico City, Postal Code: 14100
+                        </li>
+                        <li>
+                            <i class="fas fa-phone-alt"></i>Call us: +5255 6077-5812
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>Email: Pardojavier12@gmail.com
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
+    </div>
+</section>
 
-    </section>
 
     <!--Footer-->
+    <footer>
+        <a href="#home" class="up">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="networks">
+            <a href="https://www.facebook.com/JavierPrd12" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+
+            <a href="https://www.linkedin.com/in/luis-javier-pardo/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+
+            <a href="https://github.com/JavPar12" target="_blank"><i class="fa-brands fa-github"></i></a>
+
+            <a href="https://wa.me/525560775812" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+        <p>Luis Pardo -Software Engineer- &copy;</p>
+    </footer>
 
 
     <script src="script.js"></script>
